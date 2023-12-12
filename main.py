@@ -10,7 +10,7 @@ def main(args):
         seed_setting(seed)
         LM_prt_ckpt_filepath, GNN_prt_ckpt_filepath, MLP_KD_ckpt_filepath, LM_ckpt_filepath, GNN_ckpt_filepath, MLP_ckpt_filepath, LM_intermediate_data_filepath, GNN_intermediate_data_filepath, MLP_intermediate_data_filepath = prepare_path(args.experiment_name + f'_seed_{seed}')
 
-        data = load_raw_data(args.raw_data_filepath, args.use_GNN)
+        data = load_raw_data(args.dataset, args.use_GNN)
 
         run = setup_wandb(args, seed)
 
