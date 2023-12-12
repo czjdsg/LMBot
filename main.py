@@ -4,8 +4,6 @@ from trainer import LM_Trainer, GNN_Trainer, MLP_Trainer
 import torch.nn as nn
 
 def main(args):
-    test_acc = []
-    test_f1 = []
     
     for seed in list(map(int, args.seeds.strip().split(','))):
         
