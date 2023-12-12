@@ -25,7 +25,8 @@ def setup_wandb(args, seed):
     return run
 
 
-def load_raw_data(data_filepath, use_GNN):
+def load_raw_data(dataset, use_GNN):
+    data_filepath = f'./datasets/{dataset}/'
     print('Loading data...')
     train_idx = torch.load(data_filepath+'train_idx.pt')
     valid_idx = torch.load(data_filepath+'valid_idx.pt')
