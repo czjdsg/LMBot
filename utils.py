@@ -94,10 +94,8 @@ def prepare_path(experiment_name):
 
     return LM_prt_ckpt_filepath, GNN_prt_ckpt_filepath, MLP_KD_ckpt_filepath, LM_ckpt_filepath, GNN_ckpt_filepath, MLP_ckpt_filepath, LM_intermediate_data_filepath, GNN_intermediate_data_filepath, MLP_intermediate_data_filepath
 
-def preprocess(raw_data_filepath):
-    path = Path(raw_data_filepath)
-    
 
+    
 def reset_split(n_nodes, ratio):
     idx = torch.randperm(n_nodes)
     split = list(map(int, ratio.split(',')))
@@ -109,6 +107,3 @@ def reset_split(n_nodes, ratio):
     test_idx = idx[int((train_ratio + valid_ratio) * n_nodes):]
     return train_idx, valid_idx, test_idx
 
-
-def GNN_init(GNNTrainer, LMTrainer):
-    pass
