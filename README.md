@@ -16,9 +16,9 @@ pip install pyg_lib-0.1.0+pt112cu102-cp39-cp39-linux_x86_64.whl torch_cluster-1.
 Please download our preprocessed datasets [here](https://drive.google.com/drive/folders/1kbI3uJQCn3e8CN3d9iUeUNSIOuJCbDUj?usp=sharing) and put it in the ```datasets``` folder.
 
 ## Training
-Run the following commands to train on ```Twibot-20```:
+Run the following commands to train on ```TwiBot-20```:
 ```
-main.py --project_name lmbot --experiment_name TwiBot-20 --dataset Twibot-20 --device 0 --LM_pretrain_epochs 4.5 --alpha 0.5 --max_iter 10 --batch_size_LM 32 --use_GNN
+main.py --project_name lmbot --experiment_name TwiBot-20 --dataset TwiBot-20 --device 0 --LM_pretrain_epochs 4.5 --alpha 0.5 --max_iter 10 --batch_size_LM 32 --use_GNN
 ```
 
 
