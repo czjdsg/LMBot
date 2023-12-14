@@ -20,5 +20,18 @@ Run the following commands to train on ```TwiBot-20```:
 ```
 main.py --project_name lmbot --experiment_name TwiBot-20 --dataset TwiBot-20 --device 0 --LM_pretrain_epochs 4.5 --alpha 0.5 --max_iter 10 --batch_size_LM 32 --use_GNN
 ```
+Run the following commands to train on ```Cresci-2015```:
+```
+main.py --project_name lmbot --experiment_name Cresci-2015 --dataset Cresci-2015 --device 0 --LM_pretrain_epochs 2.5 --alpha 0.5 --max_iter 10 --batch_size_LM 32 --use_GNN --LM_eval_patience 10 --hidden_dim 64
+```
+Run the following commands to train on ```Cresci-2017```:
+```
+main.py --project_name lmbot --experiment_name Cresci-2017 --dataset Cresci-2017 --device0 --LM_pretrain_epochs 3 --alpha 0.5 --max_iter 10 --batch_size_LM 32 --LM_eval_patience 20
+```
+Run the following commands to train on ```Midterm-2018```:
+```
+main.py --project_name lmbot --experiment_name Midterm-2018 --dataset Midterm-2018 --device 0 --LM_pretrain_epochs 2 --batch_size_LM 32 --LM_accumulation 1 --LM_eval_patience 50
+```
+
 
 
