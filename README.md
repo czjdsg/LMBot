@@ -4,7 +4,8 @@ Official implementation of [LMBot: Distilling Graph Knowledge into Language Mode
 ## Requirements
 Run following command to create environment for reproduction (for cuda 10.2):
 ```
-pip install -r requirements.txt
+conda env create -f lmbot.yaml
+conda activate lmbot
 pip install torch==1.12.0+cu102 torchvision==0.13.0+cu102 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu102
 ```
 For ```pyg_lib```, ```torch_cluster```, ```torch_scatter```, ```torch_sparse``` and ```torch_spline_conv```, please download [here](https://data.pyg.org/whl/torch-1.12.0%2Bcu102.html) and install locally.
