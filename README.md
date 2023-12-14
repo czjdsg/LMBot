@@ -30,7 +30,7 @@ main.py --project_name lmbot --experiment_name Cresci-2017 --dataset Cresci-2017
 ```
 Run the following commands to train on ```Midterm-2018```:
 ```
-main.py --project_name lmbot --experiment_name Midterm-2018 --dataset Midterm-2018 --device 0 --LM_pretrain_epochs 2 --batch_size_LM 32 --LM_accumulation 1 --LM_eval_patience 50
+main.py --project_name lmbot --experiment_name Midterm-2018 --dataset Midterm-2018 --device 0 --LM_pretrain_epochs 2 --batch_size_LM 32 --LM_eval_patience 50
 ```
 
 
